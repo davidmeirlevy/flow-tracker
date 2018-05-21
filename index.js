@@ -9,11 +9,11 @@ class FlowTracker {
 
     start() {
         if (this._steps && this._steps.length) {
-            return this.continue();
+            return this._continue();
         }
     }
 
-    continue() {
+    _continue() {
         const step = this._steps[this._currentStepIndex];
 
         if (!step) {
