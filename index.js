@@ -45,7 +45,7 @@ class FlowTracker {
         });
     }
 
-    makeRequest({ method, url, headers, qs, body, proxy }) {
+    makeRequest({ method, url, headers, qs, body, proxy, json }) {
         return new Promise((resolve, reject) => {
             request({
                 url,
@@ -53,6 +53,7 @@ class FlowTracker {
                 qs,
                 body,
                 proxy,
+                json,
                 method: method || 'GET'
             }, (err, response, body) => {
                 if (err) {
