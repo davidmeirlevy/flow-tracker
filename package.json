@@ -1,0 +1,10 @@
+{
+  "name": "flow-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "David Meir-Levy <davidmeirlevy@gmail.com>",
+  "dependencies": {
+    "request": "^2.87.0"
+  }
+}
