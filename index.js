@@ -22,7 +22,7 @@ class FlowTracker {
 
         return this.runStep(step).then(() => {
             this._currentStepIndex++;
-            return this.continue();
+            return this._continue();
         });
     }
 
